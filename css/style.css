@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+@keyframes blinker { to { opacity: 0; } }
+
+body {
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+}
+.promotion__text{
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    padding-top:140px;
+}
+.promotion__descr{
+    font-size:50px;
+    font-weight:900;
+    color: white;
+    background-color: rgba(39, 37, 37, 0.897);
+    width: 900px;height: 70px;
+    text-align: center;
+    margin: auto;
+}
+.promotion__timer{
+    width:550px;
+    margin: auto;
+    background-image: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.promotion__timer .timer{
+    margin-top:60px;
+    display:flex;
+    justify-content:space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;}    
+.promotion__timer .timer__block{
+    width:102px;
+    height:120px;
+    background:#fff;    
+    font-size:16px;
+    font-weight:300;
+    text-align:center;
+    padding-bottom: 8px;
+}
+.promotion__timer .timer__block span{
+    display:block;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-size:56px;
+    font-weight:700
+}
+.container{
+    background-image: url(../img/c5583bac27ee756f96d308b37e697347f5c8036f.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 100vh;
+}
+#audio-btn {
+    width: 50px;
+    height: 50px;   
+    position: absolute;
+    background-image: url(../img/play-button.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-radius: 100%;
+    top: 116px;
+    left: 65px;
+    border: none;
+}
+#close-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(../img/pause.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border-radius: 100%;
+    display: none;
+    top: 116px;
+    left: 65px;
+    border: none;
+}
+.music__container{
+    font-size:20px;
+    font-weight:900;
+    color: white;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    margin-left: 1100px;
+    position: relative;
+    display: block;
+    border-radius: 100%;
+    background-image: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+.music__container :hover {
+    cursor: pointer;
+}
+.music{
+    background-color:#24363257;
+    border-radius: 100%;
+    width: 180px;height: 180px;    
+}
+.music__text{    
+    padding-top: 25px;
+    animation: blinker 1.7s cubic-bezier(0, 0, 0.85, 0.81) infinite alternate;
+}
