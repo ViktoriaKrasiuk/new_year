@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
       //  Timer
-    const deadline = '2021-01-01';
+    //const deadline = '2021-01-01';
+    const deadline = `${new Date().getFullYear() + 1}-01-01`
+    debugger
     function GetTimeRemaining (endtime) {
         const oneHour = 3600000;
         const t = Date.parse(endtime) - Date.parse(new Date()) - (2*oneHour),
